@@ -4,5 +4,5 @@ dependencies:
 test:
   override:
     - mkdir -p $CIRCLE_TEST_REPORTS/phpunit
-    - vendor bin/phpunit --configuration phpunit.xml.dist --log-junit
+    - vendor/bin/phpunit --configuration phpunit.xml.dist --log-junit
 $CIRCLE_TEST_REPORTS/phpunit/junit.xml
