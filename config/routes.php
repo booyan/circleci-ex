@@ -51,6 +51,9 @@ Router::scope('/', function (RouteBuilder $routes) {
      */
     $routes->connect('/', ['controller' => 'Pages', 'action' => 'display', 'home']);
 
+    /** マイページ */
+    $routes->connect('/my', ['controller' => 'MyPage', 'action' => 'index']);
+
     /**
      * ...and connect the rest of 'Pages' controller's URLs.
      */
